@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "App-Anime",
+    "slug": "App-Anime",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
