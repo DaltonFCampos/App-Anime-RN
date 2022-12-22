@@ -1,13 +1,17 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, SafeAreaView, ScrollView } from "react-native";
 import styles from "./style";
+import Header from "../../components/Header";
 
-function Home() {
+function HomePage() {
   return (
-    <View style={styles.container}>
-      <Text>Essa é a Home Page</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <ScrollView>
+        <Header />
+        <Text>Essa é a Home Page</Text>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
 
-export default Home;
+export default HomePage;

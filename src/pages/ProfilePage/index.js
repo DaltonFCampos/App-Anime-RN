@@ -2,12 +2,12 @@ import React from "react";
 import { SafeAreaView, Text } from "react-native";
 import styles from "./style";
 
-function SearchPage() {
+function ProfilePage() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Essa é a Search Page</Text>
+      <Text>Essa é a Profile Page</Text>
     </SafeAreaView>
   );
 }
 
-export default SearchPage;
+export default ProfilePage;
