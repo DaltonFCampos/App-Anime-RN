@@ -10,6 +10,7 @@ import {
 import styles from "./style";
 import Header from "../../components/Header";
 import Data from "../../data/Database";
+import VerticalCard from "../../components/VerticalCard";
 
 function HomePage() {
   const tamanho = useWindowDimensions();
@@ -21,37 +22,42 @@ function HomePage() {
         stickySectionHeadersEnabled={false}
         scrollEnabled={true}
         sections={Data}
+        initialNumToRender={5}
+        // Render Horizontal
         renderSectionHeader={({ section }) => (
           <View>
-            <Text>{section.title}</Text>
+            <Text style={styles.title}>
+              {section.title} {">>>"}
+            </Text>
             {section.horizontal && (
               <FlatList
                 data={section.data}
                 horizontal
-                renderItem={({ item }) => {
-                  return <ListItem item={item} />;
-                }}
+                renderItem={_renderitem}
               />
             )}
           </View>
         )}
+        // Render Vertical
         renderItem={({ item, section }) => {
           if (section.horizontal) {
             return null;
           }
-          return <ListItem item={item} />;
+          return (
+            <View
+              style={{
+                alignItems: "center",
+              }}
+            >
+              <VerticalCard item={item} />
+            </View>
+          );
         }}
       />
     </SafeAreaView>
   );
 }
 
-const ListItem = ({ item }) => {
-  return (
-    <View style={styles.card}>
-      <Text>{item.title}</Text>
-    </View>
-  );
-};
+const _renderitem = ({ item }) => <VerticalCard item={item} />;
 
 export default HomePage;
