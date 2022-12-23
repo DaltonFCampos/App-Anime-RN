@@ -1,0 +1,76 @@
+{
+  "title": "Top 10",
+  "horizontal": true,
+  "data": [
+    {
+      "id": 1,
+      "title": "Hunter x Hunter",
+      "VerticalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/cbb55a6382682bf71e91f685c6473c5a.jpeg",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/2e54344c7cc1675af721b4021222230f.jpeg",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 2,
+      "title": "Chainsaw Man ",
+      "VerticalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/922742d9acaeba7d887ed11b6caab0e4.jpe",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/ea075b926e1073f4eb016bff8cdb434c.jpe",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 3,
+      "title": "My Hero Academia",
+      "VerticalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/7e023c55c6cb63b2ecbb31b6aae9bf12.jpe",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/f0dfabec20d9f3ce33add1a92d381c70.jpe",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 4,
+      "title": "One Piece",
+      "VerticalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/2239c7b46b2e491ae33b33ff980e9fb1.jpe",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/236f44583009506b8d9d012c4d3119a5.jpe",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 5,
+      "title": "SPY x FAMILY",
+      "VerticalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/689e2efcf9f192ba6c0f7a538ee99027.jpe",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/5a9cac4da58ec396b489713de0e10144.jpe",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 6,
+      "title": "Mob Psycho 100",
+      "VerticalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/a89cfc561f6de95d35723fd665d708fb.jpe",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c0e2440d3f27196ba37abaed8b824df5.jpe",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 7,
+      "title": "BLUELOCK",
+      "VerticalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/9d559e801c720bc2743cbc44793753bf.jpe",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d46bbba875a6d0ffef9d3025fb55dd5f.jpe",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 8,
+      "title": "To Your Eternity",
+      "VerticalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/016adcae0f11000defa3161db05c2022.jpe",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/0ce768f96b6dfa3db33abfca5108919f.jpe",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 9,
+      "title": "HAIKYU!!",
+      "VerticalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/af5f2304138a2ebe9caf5b7d0b1e2f01.jpeg",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/a39c98af004dd546714bbc041cf36026.jpeg",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 10,
+      "title": "Shinobi no Ittoki",
+      "VerticalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/acfbc6a9b0cf0cce4db06a57a2a8e588.jpe",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/c6a7ba42ba99f250a26fb1c99d8c89d0.jpe",
+      "tag": ["Ação", "Luta"]
+    }
+  ]
+}

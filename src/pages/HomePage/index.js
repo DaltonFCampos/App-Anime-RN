@@ -9,11 +9,14 @@ import {
 } from "react-native";
 import styles from "./style";
 import Header from "../../components/Header";
-import Data from "../../data/Database";
 import VerticalCard from "../../components/VerticalCard";
+import NewData from "../../data/NewData.json";
+import RecommendData from "../../data/RecommendData.json";
+import Top10 from "../../data/Top10Data.json";
 
 function HomePage() {
   const tamanho = useWindowDimensions();
+  const Data = [Top10, RecommendData, NewData];
   return (
     <SafeAreaView style={styles.container}>
       <SectionList

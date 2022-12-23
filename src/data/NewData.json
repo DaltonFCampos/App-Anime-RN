@@ -1,0 +1,41 @@
+{
+  "title": "New",
+  "horizontal": true,
+  "data": [
+    {
+      "id": 14,
+      "title": "anime 7",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 15,
+      "title": "anime 8",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 16,
+      "title": "anime 9",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 17,
+      "title": "anime 10",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 18,
+      "title": "anime 11",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 19,
+      "title": "anime 12",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 20,
+      "title": "anime 13",
+      "tag": ["Ação", "Luta"]
+    }
+  ]
+}

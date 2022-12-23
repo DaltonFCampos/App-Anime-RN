@@ -1,0 +1,23 @@
+{
+  "title": "Recommend",
+  "horizontal": true,
+  "data": [
+    {
+      "id": 11,
+      "title": "JoJo's Bizarre Adventure",
+      "VerticalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/2423e59e70fab2f873cbe48c9dac0d21.jpe",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/aaeca3e651bebe79fe808085d079feea.jpe",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 12,
+      "title": "anime 5",
+      "tag": ["Ação", "Luta"]
+    },
+    {
+      "id": 13,
+      "title": "anime 6",
+      "tag": ["Ação", "Luta"]
+    }
+  ]
+}
