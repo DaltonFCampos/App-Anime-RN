@@ -32,8 +32,10 @@ function VerticalCard({ item }) {
           }
         ></Image>
         <View>
-          <Text style={styles.tittle}>{item.title}</Text>
-          <Text style={styles.tag}>
+          <Text numberOfLines={1} style={styles.tittle}>
+            {item.title}
+          </Text>
+          <Text numberOfLines={1} style={styles.tag}>
             {item.tag == undefined ? "" : item.tag.join(" - ")}
           </Text>
         </View>

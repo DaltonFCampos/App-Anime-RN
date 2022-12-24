@@ -22,7 +22,7 @@ function LoginPage({ navigation }) {
         title="Logar"
         onPress={() => {
           handleAsyncStorage();
-          navigation.navigate("TabPage");
+          navigation.navigate("TabRoute");
         }}
       />
 
