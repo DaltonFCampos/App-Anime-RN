@@ -9,12 +9,12 @@ import {
 } from "react-native";
 import styles from "./style";
 
-function VerticalCard({ item }) {
+function VerticalCard({ item, navi }) {
   return (
     <SafeAreaView style={[styles.card, { width: 190, height: 350 }]}>
       <TouchableOpacity
         onPress={() => {
-          Alert.alert("Anime: ", item.title);
+          navi.navigate("Reading Page", { id: item.id });
         }}
       >
         <Image

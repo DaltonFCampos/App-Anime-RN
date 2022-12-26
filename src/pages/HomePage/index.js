@@ -14,7 +14,7 @@ import NewData from "../../data/NewData.json";
 import RecommendData from "../../data/RecommendData.json";
 import Top10 from "../../data/Top10Data.json";
 
-function HomePage() {
+function HomePage({ navigation }) {
   const tamanho = useWindowDimensions();
   const Data = [Top10, RecommendData, NewData];
   return (
@@ -36,7 +36,9 @@ function HomePage() {
               <FlatList
                 data={section.data}
                 horizontal
-                renderItem={_renderitem}
+                renderItem={({ item }) => (
+                  <VerticalCard navi={navigation} item={item} />
+                )}
               />
             )}
           </View>
@@ -60,7 +62,5 @@ function HomePage() {
     </SafeAreaView>
   );
 }
-
-const _renderitem = ({ item }) => <VerticalCard item={item} />;
 
 export default HomePage;
