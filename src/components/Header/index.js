@@ -11,7 +11,7 @@ import Icon from "@expo/vector-icons/Ionicons";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 export default function () {
-  const [user, setUser] = useState("Dalton");
+  const [user, setUser] = useState("Seu Nome");
 
   async function getData() {
     //Busca o valor no asyncStorage
