@@ -9,20 +9,19 @@ import {
   Image,
 } from "react-native";
 import Styles from "./style";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { Auth } from "../../Firebase/auth";
-import { signInWithEmailAndPassword } from "firebase/auth";
 
-function LoginPage({ navigation }) {
+function RegisterPage({ navigation }) {
   const [user, setUser] = useState("");
-  const [PassWord, setPassword] = useState("");
+  const [passWord, setPassword] = useState("");
   const [passwordHidden, setPasswordHidden] = useState(true);
 
-  const handleSignin = () => {
-    signInWithEmailAndPassword(Auth, user, PassWord)
+  const handleCreateAccount = () => {
+    createUserWithEmailAndPassword(Auth, user, passWord)
       .then((userCredential) => {
-        console.log("Sign In");
+        alert("Conta criada");
         const usuario = userCredential.user;
-        navigation.navigate("TabRoute");
         console.log(usuario);
       })
       .catch((error) => {
@@ -37,6 +36,7 @@ function LoginPage({ navigation }) {
           style={Styles.logo}
           source={require("../../assets/imgs/logo-Animepp.png")}
         />
+        <Text style={Styles.textRegister}> Register </Text>
       </SafeAreaView>
       <View
         style={{
@@ -49,7 +49,6 @@ function LoginPage({ navigation }) {
           style={Styles.loginInput}
           placeholder="User-ID"
           placeholderTextColor={"#90939B"}
-          value={user}
           onChangeText={(text) => setUser(text)}
         />
 
@@ -59,7 +58,6 @@ function LoginPage({ navigation }) {
           placeholderTextColor={"#90939B"}
           autoCapitalize="none"
           secureTextEntry={passwordHidden}
-          value={PassWord}
           onChangeText={(text) => {
             setPassword(text);
           }}
@@ -81,27 +79,20 @@ function LoginPage({ navigation }) {
       <TouchableOpacity
         style={Styles.loginButton}
         onPress={() => {
-          handleSignin();
+          handleCreateAccount();
         }}
       >
-        <Text style={Styles.textButton}>Login</Text>
+        <Text style={Styles.textButton}>Register</Text>
       </TouchableOpacity>
 
-      <View style={Styles.forgotPassword}>
-        <Text style={{ color: "#90939B" }}>Forgot Password?</Text>
-        <TouchableOpacity>
-          <Text style={{ color: "#2EAEBE" }}> Recover here</Text>
-        </TouchableOpacity>
-      </View>
-
       <View style={Styles.singUP}>
-        <Text style={{ color: "#90939B" }}>Don't have an account?</Text>
-        <TouchableOpacity onPress={() => navigation.navigate("Register Page")}>
-          <Text style={{ color: "#2EAEBE" }}> SignUp here</Text>
+        <Text style={{ color: "#90939B" }}>You already have an account?</Text>
+        <TouchableOpacity onPress={() => navigation.goBack()}>
+          <Text style={{ color: "#2EAEBE" }}> Login here</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
 }
 
-export default LoginPage;
+export default RegisterPage;
