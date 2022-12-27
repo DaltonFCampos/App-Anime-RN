@@ -47,7 +47,8 @@ function RegisterPage({ navigation }) {
       >
         <TextInput
           style={Styles.loginInput}
-          placeholder="User-ID"
+          placeholder="User-Email"
+          autoCapitalize="none"
           placeholderTextColor={"#90939B"}
           onChangeText={(text) => setUser(text)}
         />

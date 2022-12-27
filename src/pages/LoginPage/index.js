@@ -1,5 +1,5 @@
 import { Entypo } from "@expo/vector-icons/";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   SafeAreaView,
   Text,
@@ -11,14 +11,33 @@ import {
 import Styles from "./style";
 import { Auth } from "../../Firebase/auth";
 import { signInWithEmailAndPassword } from "firebase/auth";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 function LoginPage({ navigation }) {
   const [user, setUser] = useState("");
-  const [PassWord, setPassword] = useState("");
+  const [passWord, setPassword] = useState("");
   const [passwordHidden, setPasswordHidden] = useState(true);
 
-  const handleSignin = () => {
-    signInWithEmailAndPassword(Auth, user, PassWord)
+  async function handleAsyncStorage() {
+    //armazena valor no asyncStorage
+    await AsyncStorage.setItem("@User1", user);
+    await AsyncStorage.setItem("@Password1", passWord);
+  }
+
+  async function signinAutomatically() {
+    const asyncUser = await AsyncStorage.getItem("@User1");
+    const asyncPassword = await AsyncStorage.getItem("@Password1");
+    if (asyncUser && asyncPassword) {
+      handleSignin(asyncUser, asyncPassword);
+    }
+  }
+
+  useEffect(() => {
+    signinAutomatically();
+  }, []);
+
+  const handleSignin = (u, p) => {
+    signInWithEmailAndPassword(Auth, u, p)
       .then((userCredential) => {
         console.log("Sign In");
         const usuario = userCredential.user;
@@ -47,8 +66,9 @@ function LoginPage({ navigation }) {
       >
         <TextInput
           style={Styles.loginInput}
-          placeholder="User-ID"
+          placeholder="User-Email"
           placeholderTextColor={"#90939B"}
+          autoCapitalize="none"
           value={user}
           onChangeText={(text) => setUser(text)}
         />
@@ -59,7 +79,7 @@ function LoginPage({ navigation }) {
           placeholderTextColor={"#90939B"}
           autoCapitalize="none"
           secureTextEntry={passwordHidden}
-          value={PassWord}
+          value={passWord}
           onChangeText={(text) => {
             setPassword(text);
           }}
@@ -81,7 +101,8 @@ function LoginPage({ navigation }) {
       <TouchableOpacity
         style={Styles.loginButton}
         onPress={() => {
-          handleSignin();
+          handleAsyncStorage();
+          handleSignin(user, passWord);
         }}
       >
         <Text style={Styles.textButton}>Login</Text>
