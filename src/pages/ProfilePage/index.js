@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { SafeAreaView, Text, Button } from "react-native";
+import {
+  SafeAreaView,
+  Text,
+  View,
+  Image,
+  TouchableOpacity,
+} from "react-native";
 import styles from "./style";
-
+import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons/";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 function ProfilePage({ navigation }) {
@@ -35,20 +41,87 @@ function ProfilePage({ navigation }) {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Essa é a Profile Page</Text>
-      <Button
-        title="Log Usuario logado"
-        onPress={() => {
-          console.log(user + " | " + password);
-        }}
-      />
+      <View style={styles.profile}>
+        <View style={styles.icon}>
+          <TouchableOpacity>
+            <MaterialCommunityIcons
+              name="pencil-circle"
+              size={50}
+              color={"#2EAEBE"}
+            />
+          </TouchableOpacity>
+        </View>
 
-      <Button
-        title="Deslogar"
-        onPress={() => {
-          logout();
-        }}
-      />
+        <View style={styles.image}>
+          <Image
+            style={styles.logo}
+            source={require("../../assets/imgs/Profile-icon.jpg")}
+          />
+        </View>
+
+        <View style={styles.info}>
+          <Text style={{ fontWeight: "bold", color: "#fff", fontSize: 20 }}>
+            Radamantthys
+          </Text>
+          <Text style={{ color: "#90939B", fontSize: 16 }}>{user}</Text>
+        </View>
+      </View>
+
+      <View style={styles.menu}>
+        <TouchableOpacity>
+          <View style={styles.menuButton}>
+            <Text style={{ color: "white", fontSize: 22, fontWeight: "bold" }}>
+              Anime List
+            </Text>
+            <MaterialIcons name="navigate-next" size={35} color={"#fff"} />
+          </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity>
+          <View style={styles.menuButton}>
+            <Text style={{ color: "white", fontSize: 22, fontWeight: "bold" }}>
+              Watched
+            </Text>
+            <MaterialIcons name="navigate-next" size={35} color={"#fff"} />
+          </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity>
+          <View style={styles.menuButton}>
+            <Text style={{ color: "white", fontSize: 22, fontWeight: "bold" }}>
+              My Review
+            </Text>
+            <MaterialIcons name="navigate-next" size={35} color={"#fff"} />
+          </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity>
+          <View style={styles.menuButton}>
+            <Text style={{ color: "white", fontSize: 22, fontWeight: "bold" }}>
+              Settings
+            </Text>
+            <MaterialIcons name="navigate-next" size={35} color={"#fff"} />
+          </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={{
+            width: "50%",
+            height: 50,
+            alignItems: "center",
+            alignSelf: "center",
+            justifyContent: "center",
+            marginTop: 40,
+          }}
+          onPress={() => {
+            logout();
+          }}
+        >
+          <Text style={{ color: "#2EAEBE", fontWeight: "bold", fontSize: 22 }}>
+            Log Out
+          </Text>
+        </TouchableOpacity>
+      </View>
     </SafeAreaView>
   );
 }
