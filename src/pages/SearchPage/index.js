@@ -1,11 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  SafeAreaView,
-  FlatList,
-  TextInput,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { SafeAreaView, FlatList, TextInput, View } from "react-native";
 import styles from "./style";
 import NewData from "../../data/NewData.json";
 import RecommendData from "../../data/RecommendData.json";
@@ -13,7 +7,7 @@ import Top10 from "../../data/Top10Data.json";
 import HorizontalCard from "../../components/HorizontalCard";
 import Icon from "@expo/vector-icons/FontAwesome";
 
-function SearchPage() {
+function SearchPage({ navigation }) {
   const [Data, setData] = useState([
     ...Top10.data,
     ...RecommendData.data,
@@ -46,11 +40,17 @@ function SearchPage() {
           placeholderTextColor={"white"}
         />
       </View>
-      <FlatList data={Data} renderItem={_renderitem} initialNumToRender={5} />
+      <FlatList
+        data={Data}
+        renderItem={({ item }) => (
+          <HorizontalCard navi={navigation} item={item} />
+        )}
+        initialNumToRender={5}
+      />
     </SafeAreaView>
   );
 }
 
-const _renderitem = ({ item }) => <HorizontalCard item={item} />;
+// const _renderitem = ({ item }) => <HorizontalCard item={item} />;
 
 export default SearchPage;
