@@ -5,7 +5,9 @@ import styles from "./style";
 function FavoritesPage() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Essa é a Favorites Page</Text>
+      <Text style={{ color: "white", fontSize: 25, textAlign: "center" }}>
+        Essa é a Pagina de Favoritos {"\n\n"} Em Breve...
+      </Text>
     </SafeAreaView>
   );
 }
