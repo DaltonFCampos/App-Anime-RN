@@ -13,6 +13,8 @@ export default StyleSheet.create({
     height: "100%",
     justifyContent: "flex-end",
     backgroundColor: "white",
+    maxWidth: 400,
+    minHeight: 600,
   },
   bio: {
     width: "100%",

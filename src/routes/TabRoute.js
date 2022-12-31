@@ -12,7 +12,6 @@ function TabRoute() {
   return (
     <Tab.Navigator
       screenOptions={{
-        tabBarHideOnKeyboard: true,
         headerShown: false,
         tabBarShowLabel: false,
         tabBarInactiveTintColor: "#90939B",

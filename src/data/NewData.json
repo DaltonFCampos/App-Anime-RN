@@ -4,38 +4,79 @@
   "data": [
     {
       "id": 14,
-      "title": "anime 7",
-      "tag": ["Ação", "Luta"]
+      "title": "Arknights: Reimei Zensou",
+      "VerticalImage": "https://animefire.net/img/animes/arknights-reimei-zensou-large.webp?v=1",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/d64ccb497d9d045d921e47a6fb701075.jpe",
+      "fullScreenImage": "https://mfiles.alphacoders.com/985/985033.jpg",
+      "synopsis": "Na terra da Terra, desastres naturais de causas desconhecidas vêm ocorrendo de forma irregular em muitas áreas. Portanto, a maioria das pessoas, para escapar desses desastres naturais, passou a viver em cidades móveis desenvolvidas ao longo dos anos. O Originium deixado para trás no local de tais Catástrofes, levou ao rápido progresso da civilização devido à sua imensa energia. Mas também trouxe algo mais – uma doença incurável chamada Oripatia. Como os corpos das pessoas com Oripatia gradualmente se cristalizam e se tornam uma nova fonte de infecção no momento da morte, em muitos países, os infectados estão sujeitos a perseguição sob regimes de segregação e trabalho forçado. Aqueles que foram oprimidos pelos governos estão começando a se rebelar. Rhodes Island, uma empresa farmacêutica que pesquisa a cura para a Oripatia, pega em armas e inicia uma conquista tentando salvar todas as pessoas da doença.",
+      "tag": ["Ação", "Aventura", "Drama", "Fantasia", "Ficção científica"]
     },
     {
       "id": 15,
-      "title": "anime 8",
-      "tag": ["Ação", "Luta"]
+      "title": "Tensei shitara Slime Datta Ken",
+      "VerticalImage": "https://image.tmdb.org/t/p/w185/lBhvBqYtR9J8mQPDdnpRcMcte0a.jpg",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/2afcd3a9eb8cd351328bcae8d5d7dc4a.jpe",
+      "fullScreenImage": "https://mfiles.alphacoders.com/950/950036.jpg",
+      "synopsis": "Depois de ser morto por um ladrão que fugia, um rapaz normal de 37 anos de idade se encontra reencarnado em um outro mundo como um slime cego com habilidades únicas. Com um novo nome 'Rimuru Tempest' ele chegou depois de conhecer seu novo amigo, o 'nível de catástrofe', Dragão da Tempertade Verudora, ele começa sua vida de slime em outro mundo com seu crescente número de seguidores.",
+      "tag": ["Ação", "Aventura", "Fantasia"]
     },
     {
       "id": 16,
-      "title": "anime 9",
-      "tag": ["Ação", "Luta"]
+      "title": "Kantai Collection: KanColle",
+      "VerticalImage": "https://animesonline.cc/wp-content/uploads/2019/08/kkUAaIPsSvUJtCx43hTxGmW48jc-185x278.jpg",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/2b44a8ca7fc10b9141c26d36cbc9b76c.jpe",
+      "fullScreenImage": "https://mfiles.alphacoders.com/985/985678.png",
+      "synopsis": "A história se passa em um mundo onde a humanidade perdeu o controle dos mares. A ameaça que tomou os mares é a chamada “Frota do Mar Profundo”. Os únicos que podem combater essa ameaça são as Kan-musume, garotas que possuem o espírito dos navios de épocas passadas. A base para a frota que luta contra a “Frota do Mar Profundo” é a Chinjufu. Lá, muitas kan-musume se reúnem para viverem juntas e treinarem. Um dia, uma Kan-musume da classe Destruidora chega a Chinjufu. Seu nome é Fubuki. “Eu sou Fubuki! Prazer em conhecê-las”. A história de Fubuki, assim como a história das Kan-musume, começa agora.",
+      "tag": [
+        "Ação",
+        "Aventura",
+        "Escolar",
+        "Ficção científica",
+        "Militar",
+        "Policial",
+        "Slice Of Life"
+      ]
     },
     {
       "id": 17,
-      "title": "anime 10",
-      "tag": ["Ação", "Luta"]
+      "title": "Tensei Oujo to Tensai Reijou no Mahou Kakumei",
+      "VerticalImage": "https://animesonline.cc/wp-content/uploads/2022/12/TIHeSBtsF1jmySuuM10Opl30Ct-185x278.jpg",
+      "horizontalImage": "https://img1.ak.crunchyroll.com/i/spire3/209868b0d38c448adf912f6c2f760c0c1670873953_main.jpg",
+      "synopsis": "Anisphia, a princesa que lembrou de sua vida passada quando criança, assim como o seu amor intenso pela magia do seu eu antigo, saiu para vivenciar fantasias nesse mundo de fantasia. Um dia, durante um acidente mágico, ela se deparou com uma cena em que seu irmão, Algard, estava rompendo o noivado com sua pretendente, Euphilia. O que ninguém poderia prever é que esse estranho encontro acabaria mudando o rumo da história.",
+      "tag": ["Comédia", "Fantasia", "Yuri"]
     },
     {
       "id": 18,
-      "title": "anime 11",
-      "tag": ["Ação", "Luta"]
+      "title": "Seiken Densetsu: Legend of Mana. The Teardrop Crystal",
+      "VerticalImage": "https://animesonline.cc/wp-content/uploads/2022/10/7ls6XvZQqrGgbaJRw6ulsJVzfi3-185x278.jpg",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/33e9eb38d2ce5533a258272d8baf0e09.jpe",
+      "synopsis": "Em um universo onde a principal fonte de mana do mundo entrou em uma espécie de hibernação para se recuperar das guerras que os povos criaram ao longo de vários anos para ter seu controle. Por conta desses eventos, muitas terras do antigo mundo foram armazenadas em artefatos para serem preservadas, cabendo ao próximo herói (jogador) ter que libertá-las e reconstruir o mundo de volta ao seu antigo estado, onde diversas raças e criaturas viviam juntas.",
+      "tag": ["Ação", "Aventura", "Fantasia"]
     },
     {
       "id": 19,
-      "title": "anime 12",
-      "tag": ["Ação", "Luta"]
+      "title": "Food Wars! Shokugeki no Soma",
+      "VerticalImage": "https://animesbr.biz/wp-content/uploads/2019/11/aUKsUFkr0i9aBzODkBvNMgOHLzq-185x278.jpg",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/4e954b4dff8729bf4476d76d8185bce6.jpeg",
+      "fullScreenImage": "https://mfiles.alphacoders.com/916/916792.jpg",
+      "synopsis": "O anime gira em torno de Yukihira Soma, um estudante do ensino médio que está determinado a superar seu pai nas habilidades culinárias. Um dia, seu pai decide fechar o restaurante de sua família e aprimorar suas habilidades culinárias na Europa. Antes de partir, porém, ele matricula Soma em um instituto gastronômico de elite extremamente difícil de entrar e com taxa de formandos de apenas 10%. Será que Soma vai conseguir melhorar suas habilidades culinárias? Ou será que a cozinha vai se revelar quente demais para ele?",
+      "tag": ["Escolar", "Shounen"]
     },
     {
       "id": 20,
-      "title": "anime 13",
-      "tag": ["Ação", "Luta"]
+      "title": "Berserk: The Golden Age Arc",
+      "VerticalImage": "https://animesonline.cc/wp-content/uploads/2022/10/anydQ5ORx268x9PBzLlRMkvVH5r-185x278.jpg",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/697bdcb5b5f00017bdf2c12375ded111.jpe",
+      "fullScreenImage": "https://mfiles.alphacoders.com/765/765513.jpg",
+      "synopsis": "O Reino de Midland e o Império Tudor travaram guerra um contra o outro por aproximadamente 100 anos. As habilidades de luta do espadachim solitário Guts despertam o interesse do líder mercenário Griffith, após a derrota de Bazuso durante o cerco de uma fortaleza de Falcon. Os dois mais tarde se envolvem em um duelo decisivo, no qual Griffith recruta Guts com sucesso para seu Bando do Falcão derrotando o espadachim. Por três anos, Guts ajuda muito nos esforços militares do Bando do Falcão, ganhando o posto de Capitão dos Invasores do Falcão. Com suas vitórias militares consecutivas e fama cada vez maior, a banda acaba conquistando a confiança do Rei de Midland, que pede sua ajuda na Guerra dos Cem Anos de Midland com Tudor.",
+      "tag": [
+        "Ação",
+        "Aventura",
+        "Demônios",
+        "Horror",
+        "Seinen",
+        "Sobrenatural"
+      ]
     }
   ]
 }

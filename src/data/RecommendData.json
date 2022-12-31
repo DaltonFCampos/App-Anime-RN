@@ -5,19 +5,45 @@
     {
       "id": 11,
       "title": "JoJo's Bizarre Adventure",
-      "VerticalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/240x360/catalog/crunchyroll/2423e59e70fab2f873cbe48c9dac0d21.jpe",
+      "VerticalImage": "https://www.anitube.site/wp-content/uploads/JoJo-No-Kimyou-Na-Bouken-Ougon-No-Kaze-Todos-os-Epis%C3%B3dios.jpg",
       "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/aaeca3e651bebe79fe808085d079feea.jpe",
-      "tag": ["Ação", "Luta"]
+      "fullScreenImage": "https://mfiles.alphacoders.com/955/955703.jpg",
+      "synopsis": "Ambientado em 2001 na Itália, a história segue Giorno Giovanna e seu sonho de crescer dentro da máfia napolitana e derrotar o chefe da Passione, a mais poderosa e influente gangue, afim de se tornar uma “Gang-Star”. Com a ajuda de um capo (chefe) e seus homens, ele se propõe a cumprir sua meta de absolver a máfia de sua corrupção.",
+      "tag": ["Ação", "Aventura", "Comédia", "Drama", "Shounen"]
     },
     {
       "id": 12,
-      "title": "anime 5",
-      "tag": ["Ação", "Luta"]
+      "title": "Shingeki No Kyojin",
+      "VerticalImage": "https://animesonline.cc/wp-content/uploads/2019/06/klZInAjx229ZeTtoDLpAF8Cxv0s-185x278.jpg",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/9daa2f17d7ad2727d72fdeaae6e232de.jpeg",
+      "fullScreenImage": "https://mfiles.alphacoders.com/985/985140.jpg",
+      "synopsis": "A história de Ataque dos Titãs gira em torno de uma humanidade que vem sendo exterminada por titãs. Porém alguns seres humanos estão dispostos a mudar história e formar um exército de ataque aos seres assassinos. É assim que entra Eren, nosso protagonista, que após ver sua mãe ser devorada por um titã, decide que não deixará nenhum deles vivo e buscará sua vingança completa",
+      "tag": ["Ação", "Drama", "Fantasia", "Militar", "Mistério", "Shounen"]
     },
     {
       "id": 13,
-      "title": "anime 6",
-      "tag": ["Ação", "Luta"]
+      "title": "Naruto Shippuden",
+      "VerticalImage": "https://animesonline.cc/wp-content/uploads/2019/09/ic9Gb4Zz09ns3JPYHdax8u5kt0n-185x278.jpg",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/102de8278bed6e8a346a8f04b5b3c7db.jpe",
+      "fullScreenImage": "https://mfiles.alphacoders.com/985/985561.jpg",
+      "synopsis": "Uzumaki Naruto quer ser o melhor ninja de todos. Ele está indo muito bem, mas com o perigo iminente imposto pela misteriosa Akatsuki, Naruto percebe que ele deve treinar mais que nunca e deixa sua Vila para um intenso treinamento que o pressiona contra seus limites.",
+      "tag": [
+        "Ação",
+        "Artes Marciais",
+        "Aventura",
+        "Comédia",
+        "Shounen",
+        "Super Poderes"
+      ]
+    },
+    {
+      "id": 21,
+      "title": "JUJUTSU KAISEN",
+      "VerticalImage": "https://animefire.net/img/animes/jujutsu-kaisen-tv-large.webp?v=1",
+      "horizontalImage": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/98662d1c546c4e74de58fbc52679ac6c.jpe",
+      "fullScreenImage": "https://mfiles.alphacoders.com/964/964859.jpg",
+      "synopsis": "Sofrimento, arrependimento, vergonha: os sentimentos negativos dos humanos tornam-se Maldições, causando terríveis acidentes que podem levar até mesmo à morte. E pra piorar, Maldições só podem ser exorcizadas por outras Maldições. Certo dia, para salvar amigos que estavam sendo atacados por Maldições, Yuji Itadori engole o dedo do Ryomen-Sukuna, absorvendo sua Maldição. Ele então decide se matricular no Colégio Técnico de Feitiçaria de Tóquio, uma organização que combate as Maldições... e assim começa a heróica lenda do garoto que tornou-se uma Maldição para exorcizar uma Maldição.",
+      "tag": ["Ação", "Shounen", "Super Poderes"]
     }
   ]
 }
