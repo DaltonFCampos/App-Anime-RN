@@ -12,19 +12,18 @@ function TabRoute() {
   return (
     <Tab.Navigator
       screenOptions={{
+        tabBarHideOnKeyboard: true,
         headerShown: false,
         tabBarShowLabel: false,
         tabBarInactiveTintColor: "#90939B",
         tabBarActiveTintColor: "#2EAEBE",
+
         tabBarStyle: {
-          position: "absolute",
+          position: "relative",
           backgroundColor: "#21252F",
           borderTopWidth: 0,
           paddingBottom: 14,
           height: 60,
-          opacity: 0.95,
-          borderTopLeftRadius: 20,
-          borderTopRightRadius: 20,
         },
       }}
     >

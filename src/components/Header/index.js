@@ -8,22 +8,17 @@ import {
 import React, { useEffect, useState } from "react";
 import styles from "./style";
 import Icon from "@expo/vector-icons/Ionicons";
-// import AsyncStorage from "@react-native-async-storage/async-storage";
+import { Auth } from "../../Firebase/auth";
 
 export default function () {
-  const [user, setUser] = useState("Seu Nome");
+  const [name, setName] = useState("Nome");
+  const currentUser = Auth.currentUser;
 
-  // async function getData() {
-  //   //Busca o valor no asyncStorage
-  //   const response = await AsyncStorage.getItem("@User1");
-  //   if (response) {
-  //     setUser(response);
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   getData();
-  // }, []);
+  useEffect(() => {
+    setName(
+      currentUser.displayName !== null ? currentUser.displayName : "Nome"
+    );
+  }, []);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -38,7 +33,9 @@ export default function () {
           style={styles.Image}
           source={require("../../assets/imgs/Profile-icon.jpg")}
         />
-        <Text style={styles.text}>Hello, {user}</Text>
+        <Text numberOfLines={1} style={styles.text}>
+          Hello, {name}
+        </Text>
       </View>
       <TouchableOpacity onPress={() => {}}>
         <Icon name="notifications-circle" size={50} color="#2EAEBE" light />

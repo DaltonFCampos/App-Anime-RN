@@ -6,8 +6,6 @@ export default StyleSheet.create({
     width: "100%",
     height: "100%",
     backgroundColor: "#1B1E26",
-    alignItems: "center",
-    justifyContent: "flex-start",
   },
   profile: {
     width: "100%",
@@ -43,11 +41,11 @@ export default StyleSheet.create({
     alignItems: "center",
   },
 
-  logo: {
+  profileIcon: {
     width: "100%",
     height: "100%",
-    borderRadius: 100,
     resizeMode: "contain",
+    borderRadius: 50,
   },
   menuButton: {
     flexDirection: "row",

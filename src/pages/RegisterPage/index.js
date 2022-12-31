@@ -9,17 +9,32 @@ import {
   Image,
 } from "react-native";
 import Styles from "./style";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { Auth } from "../../Firebase/auth";
 
 function RegisterPage({ navigation }) {
-  const [user, setUser] = useState("");
+  const [userName, setUserName] = useState("");
+  const [email, setEmail] = useState("");
   const [passWord, setPassword] = useState("");
   const [passwordHidden, setPasswordHidden] = useState(true);
 
   const handleCreateAccount = () => {
-    createUserWithEmailAndPassword(Auth, user, passWord)
+    if (userName === "" || userName === null || userName === undefined) {
+      alert("User Name Invalido");
+      return;
+    }
+    createUserWithEmailAndPassword(Auth, email, passWord)
       .then((userCredential) => {
+        updateProfile(Auth.currentUser, {
+          displayName: userName,
+        })
+          .then(() => {
+            console.log("DisplayName adicionado");
+          })
+          .catch((error) => {
+            console.log("DisplayName não foi adicionado");
+          });
+
         alert("Conta criada");
         const usuario = userCredential.user;
         console.log(usuario);
@@ -47,10 +62,19 @@ function RegisterPage({ navigation }) {
       >
         <TextInput
           style={Styles.loginInput}
-          placeholder="User-Email"
+          placeholder="User Name"
+          autoCapitalize="words"
+          maxLength={30}
+          placeholderTextColor={"#90939B"}
+          onChangeText={(text) => setUserName(text.trim())}
+        />
+
+        <TextInput
+          style={Styles.loginInput}
+          placeholder="Email"
           autoCapitalize="none"
           placeholderTextColor={"#90939B"}
-          onChangeText={(text) => setUser(text)}
+          onChangeText={(text) => setEmail(text.trim())}
         />
 
         <TextInput
@@ -60,7 +84,7 @@ function RegisterPage({ navigation }) {
           autoCapitalize="none"
           secureTextEntry={passwordHidden}
           onChangeText={(text) => {
-            setPassword(text);
+            setPassword(text.trim());
           }}
         />
         <TouchableOpacity

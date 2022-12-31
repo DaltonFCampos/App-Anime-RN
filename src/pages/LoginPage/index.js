@@ -14,21 +14,21 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 function LoginPage({ navigation }) {
-  const [user, setUser] = useState("");
+  const [email, setEmail] = useState("");
   const [passWord, setPassword] = useState("");
   const [passwordHidden, setPasswordHidden] = useState(true);
 
   async function handleAsyncStorage() {
     //armazena valor no asyncStorage
-    await AsyncStorage.setItem("@User1", user);
+    await AsyncStorage.setItem("@Email1", email);
     await AsyncStorage.setItem("@Password1", passWord);
   }
 
   async function signinAutomatically() {
-    const asyncUser = await AsyncStorage.getItem("@User1");
+    const asyncEmail = await AsyncStorage.getItem("@Email1");
     const asyncPassword = await AsyncStorage.getItem("@Password1");
-    if (asyncUser && asyncPassword) {
-      handleSignin(asyncUser, asyncPassword);
+    if (asyncEmail && asyncPassword) {
+      handleSignin(asyncEmail, asyncPassword);
     }
   }
 
@@ -36,8 +36,8 @@ function LoginPage({ navigation }) {
     signinAutomatically();
   }, []);
 
-  const handleSignin = (u, p) => {
-    signInWithEmailAndPassword(Auth, u, p)
+  const handleSignin = (e, p) => {
+    signInWithEmailAndPassword(Auth, e, p)
       .then((userCredential) => {
         console.log("Sign In");
         const usuario = userCredential.user;
@@ -66,11 +66,11 @@ function LoginPage({ navigation }) {
       >
         <TextInput
           style={Styles.loginInput}
-          placeholder="User-Email"
+          placeholder="Email"
           placeholderTextColor={"#90939B"}
           autoCapitalize="none"
-          value={user}
-          onChangeText={(text) => setUser(text)}
+          value={email}
+          onChangeText={(text) => setEmail(text)}
         />
 
         <TextInput
@@ -102,7 +102,7 @@ function LoginPage({ navigation }) {
         style={Styles.loginButton}
         onPress={() => {
           handleAsyncStorage();
-          handleSignin(user, passWord);
+          handleSignin(email.trim(), passWord.trim());
         }}
       >
         <Text style={Styles.textButton}>Login</Text>
